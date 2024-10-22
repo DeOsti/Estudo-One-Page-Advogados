@@ -1,0 +1,110 @@
+---
+import Phone from "../components/icons/contact/Phone.astro";
+import Whatsapp from "../components/icons/contact/Whatsapp.astro";
+import Mail from "../components/icons/contact/Mail.astro";
+import Facebook from "../components/icons/social/Facebook.astro";
+import Instagram from "../components/icons/social/Instagram.astro";
+import Linkedin from "../components/icons/social/Linkedin.astro";
+import X from "../components/icons/social/X.astro";
+import Youtube from "../components/icons/social/Youtube.astro";
+import MapPin from "./icons/contact/MapPin.astro";
+---
+
+<section id="contato">
+    <div class="grid place-items-center bg-zinc-900 py-20">
+        <div class="container grid place-items-center gap-10">
+            <h2 class="font-cinzel text-4xl font-bold text-zinc-50">Contato</h2>
+            <div class="container flex flex-col items-center gap-10">
+                <ul class="text-md flex flex-col items-center gap-5 text-zinc-100 md:flex-row md:gap-8">
+                    <li class="space-x-1">
+                        <a
+                            href="https://wa.me/5543996107473?text=Quero um orçamento de site!"
+                            target="_blank"
+                            class="flex gap-2 transition hover:scale-110"
+                        >
+                            <Phone fill="#FFF" width={16} />
+                            <span>(99) 99999-9999</span>
+                        </a>
+                    </li>
+                    <li class="space-x-1">
+                        <a
+                            href="https://wa.me/5543996107473?text=Quero um orçamento de site!"
+                            target="_blank"
+                            class="flex gap-2 transition hover:scale-110"
+                        >
+                            <Whatsapp fill="#FFF" width={16} />
+                            <span>(99) 99999-9999</span>
+                        </a>
+                    </li>
+                    <li class="space-x-1">
+                        <a
+                            href="mailto:contato@deosti.com.br"
+                            target="_blank"
+                            class="flex gap-2 transition hover:scale-110"
+                        >
+                            <Mail stroke="#FFF" width={16} />
+                            <span>contato@marcaempresa.adv.br</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <a
+                    href="https://wa.me/5543996107473?text=Quero um orçamento de site!"
+                    target="_blank"
+                    class="flex gap-2 text-zinc-50 transition hover:scale-110"
+                >
+                    <MapPin stroke="#FFF" width={16} />
+                    <span>Londrina - PR</span>
+                </a>
+
+                <ul class="flex gap-16 md:gap-8">
+                    <li class="space-x-1">
+                        <a
+                            href="https://www.facebook.com/deostiweb/"
+                            target="_blank"
+                            class="flex transition hover:scale-150"
+                        >
+                            <Facebook fill="#FFF" width={16} />
+                        </a>
+                    </li>
+                    <li class="space-x-1">
+                        <a
+                            href="https://www.instagram.com/deostiweb/"
+                            target="_blank"
+                            class="flex transition hover:scale-150"
+                        >
+                            <Instagram fill="#FFF" width={16} />
+                        </a>
+                    </li>
+                    <li class="space-x-1">
+                        <a
+                            href="https://www.linkedin.com/company/deostiweb/"
+                            target="_blank"
+                            class="flex transition hover:scale-150"
+                        >
+                            <Linkedin fill="#FFF" width={16} />
+                        </a>
+                    </li>
+                    <li class="space-x-1">
+                        <a
+                            href="https://www.linkedin.com/company/deostiweb/"
+                            target="_blank"
+                            class="flex transition hover:scale-150"
+                        >
+                            <X fill="#FFF" width={16} />
+                        </a>
+                    </li>
+                    <li class="space-x-1">
+                        <a
+                            href="https://www.linkedin.com/company/deostiweb/"
+                            target="_blank"
+                            class="flex transition hover:scale-150"
+                        >
+                            <Youtube fill="#FFF" width={16} />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

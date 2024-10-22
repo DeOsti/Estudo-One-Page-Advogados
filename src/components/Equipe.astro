@@ -1,0 +1,35 @@
+---
+import Image from "astro/components/Image.astro";
+import LawyerCard from "./LawyerCard.astro";
+
+import banner from "../media/images/justice-adv.jpg";
+import adv_01 from "../media/lawyers/advogado-01.webp";
+import adv_02 from "../media/lawyers/advogado-02.webp";
+import adv_03 from "../media/lawyers/advogado-03.webp";
+---
+
+<section id="equipe" class="relative flex h-auto flex-col items-center">
+    <Image
+        src={banner}
+        alt="Banner advogados"
+        class="absolute hidden h-full w-full object-cover object-top md:block"
+        widths={[768, banner.width]}
+        sizes={`(max-width: 768px) 768px,  ${banner.width}px`}
+    />
+    <div class="absolute h-full w-full bg-black opacity-95 md:opacity-75"></div>
+    <div class="container z-10 grid place-items-center py-20">
+        <span class="font-medium uppercase text-zinc-50">Os Melhores Profissionais</span>
+        <h2 class="font-cinzel text-4xl font-bold text-zinc-50">Nossa Equipe</h2>
+        <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
+            <LawyerCard title="Advogado" name="Junior Barreto Rocha">
+                <Image src={adv_01} alt="Advogado 01" />
+            </LawyerCard>
+            <LawyerCard title="Advogada" name="Tereza dias Gonçalvez">
+                <Image src={adv_02} alt="Advogado 01" />
+            </LawyerCard>
+            <LawyerCard title="Advogado" name="Alessandro Tavarez moura">
+                <Image src={adv_03} alt="Advogado 01" />
+            </LawyerCard>
+        </div>
+    </div>
+</section>

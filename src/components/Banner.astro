@@ -1,0 +1,23 @@
+---
+import Image from "astro/components/Image.astro";
+import banner from "../media/images/justice-adv.jpg";
+---
+
+<section class="relative flex h-[600px] flex-col items-center">
+    <Image
+        src={banner}
+        alt="Banner advogados"
+        class="absolute h-full w-full object-cover object-top"
+        loading="eager"
+        widths={[768, banner.width]}
+        sizes={`(max-width: 768px) 768px,  ${banner.width}px`}
+    />
+    <div class="absolute h-full w-full bg-black opacity-75"></div>
+    <div class="container z-10 mb-36 flex h-full flex-col justify-center gap-5 p-5 text-center text-zinc-50">
+        <h1 class="animate-appear-b font-cinzel text-5xl font-semibold">Escritório de Advocacia</h1>
+        <p class="animate-appear-b text-lg font-light delay-1000">
+            Bem-vindo ao nosso escritório de advocacia. Oferecemos soluções jurídicas personalizadas com excelência,
+            transparência e compromisso para atender às suas necessidades legais.
+        </p>
+    </div>
+</section>

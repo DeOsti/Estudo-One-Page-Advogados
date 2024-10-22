@@ -1,0 +1,59 @@
+---
+import Image from "astro/components/Image.astro";
+import IconCard from "./IconCard.astro";
+
+import icon1 from "../media/icons/direito-administrativo.webp";
+import icon2 from "../media/icons/direito-comercial.webp";
+import icon3 from "../media/icons/direito-imobiliario.webp";
+import icon4 from "../media/icons/direito-previdencial.webp";
+import icon5 from "../media/icons/direito-sindical.webp";
+import icon6 from "../media/icons/direito-tributario.webp";
+---
+
+<section id="atuacao" class="grid place-items-center py-20">
+    <span class="text-center font-semibold uppercase text-red-600">nós vamos te ajudar</span>
+    <h2 class="text-center font-cinzel text-4xl font-bold text-zinc-800">Nossas Especialidades</h2>
+    <div class="container mt-10 grid grid-cols-1 gap-10 py-5 md:grid-cols-3">
+        <IconCard
+            title="Direito Administrativo"
+            content="O Direito Administrativo regula a atuação da Administração Pública, suas relações com particulares e servidores, e visa garantir legalidade, eficiência e transparência na gestão pública e serviços."
+        >
+            <Image src={icon1} alt="Direito Administrativo" />
+        </IconCard>
+
+        <IconCard
+            title="Direito Comercial"
+            content="O Direito Comercial regula as atividades empresariais, contratos, sociedades e atos de comércio, buscando organizar e proteger as relações jurídicas no âmbito empresarial e econômico."
+        >
+            <Image src={icon2} alt="Direito Comercial" />
+        </IconCard>
+
+        <IconCard
+            title="Direito Imobiliário"
+            content="O Direito Imobiliário regula questões relacionadas à compra, venda, locação e uso de imóveis, além de tratar de registros, financiamentos e direitos sobre propriedades urbanas e rurais."
+        >
+            <Image src={icon3} alt="Direito Imobiliário" />
+        </IconCard>
+
+        <IconCard
+            title="Direito Previdencial"
+            content="O Direito Previdenciário regula a proteção social, assegurando benefícios como aposentadoria, pensões e auxílios, garantindo direitos aos trabalhadores por meio da Previdência Social."
+        >
+            <Image src={icon4} alt="Direito Previdencial" />
+        </IconCard>
+
+        <IconCard
+            title="Direito Sindical"
+            content="O Direito Sindical regula a organização, atuação e direitos dos sindicatos, protegendo trabalhadores e empregadores nas negociações coletivas, greves e acordos trabalhistas."
+        >
+            <Image src={icon5} alt="Direito Sindical" />
+        </IconCard>
+
+        <IconCard
+            title="Direito Tributário"
+            content="O Direito Tributário regula a arrecadação de tributos pelo Estado, disciplinando impostos, taxas e contribuições, além de tratar das obrigações dos contribuintes e fiscalização tributária."
+        >
+            <Image src={icon6} alt="Direito Tributário" />
+        </IconCard>
+    </div>
+</section>
